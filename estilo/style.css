@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format(opentype);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #88CDA5;
+    --cor1: #52AF73;
+    --cor2: #368555;
+    --cor3: #266C44;
+    --cor4: #1A5A37;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    
+    --fonte-android: 'Android', 'cursive';
+
+    --simbolo-link-externo: '\00a0\1F517';
+}
+
+body {
+    background-color: var(--cor0);
+    margin: auto;
+}
+
+header {
+    height: 140px;  
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    padding: 6px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.425);
+}
+
+header > h1 {
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.342);
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 2em;
+    margin: auto;
+    padding: 10px;
+    min-width: 320px;
+    max-width: 1000px;
+}
+
+header > p {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.342);
+    color: white;
+    font-family: var(--fonte-padrao);
+    padding: 10px;
+}
+
+nav {
+    height: 30px;
+    text-align: left;
+    margin: auto;
+    background-color: var(--cor4);
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    padding: 15px;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.432);
+    min-width: 300px;
+    max-width: 1000px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main {
+    margin: auto;
+}
+
+main h1 {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384); 
+    padding: 10px; 
+}
+
+main p {
+    font-family: var(--fonte-padrao);
+    text-indent: 2em;
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+    line-height: 2em;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: #1A5A37;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
+    background-image: linear-gradient(to right, #88CCA5, #9ED6B5, #C1E5D0, #D3ECDD, #E4F4EC, #FFFFFF);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.importante {
+    color: var(--cor3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384); 
+}
+
+.link {
+    color: var(--cor2);
+    font-weight: bold; 
+}
+
+.link::after {
+    content: var(--simbolo-link-externo);
+}
+
+
+div.video {
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+   background-color: var(--cor0);
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.274);
+
+}
+
+aside > h3 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
+    padding: 6px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.0em;
+}
+
+#link1::after {
+    content: var(--simbolo-link-externo);
+}
+
+#link2::after {
+    content: var(--simbolo-link-externo);
+}
