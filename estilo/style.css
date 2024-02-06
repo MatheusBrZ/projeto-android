@@ -86,6 +86,7 @@ nav > a:hover {
 }
 
 main {
+    margin: auto;
     background-color: white;
     margin: auto;
     padding: 20px;
@@ -94,10 +95,6 @@ main {
     max-width: 1000px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-
-main {
-    margin: auto;
 }
 
 main h1 {
